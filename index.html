@@ -1,62 +1,68 @@
 <!--Unit 3. Git and Github
     PROJECT: Excursion Project
     DESCRIPTION: A website to promote a travel mobile app.
+    NOTEs:
+      1. I've tried incorporating the www.w3.org-recommended use of HTML5 tags to properly 'section'
+         the html document.  I've limited the use of the <div> container for blocking off blocks
+         of code, as recommended, for styling purposes where required.
+         (ref. https://www.w3.org/TR/html/sections.html#sections
+               https://www.w3schools.com/html/html_layout.asp)
+
   -->
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Excursion</title>
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet"/>
   </head>
+
   <body>
-    <div class="header">
+
+    <header>
       <h1>Discover hidden places in the world around you</h1>
       <p>
         <a class="download-link" href="https://6j2sch9ioslmhh90cnj8n9kk2u8a72nb56lncsc9pmepeelri430.codecademy.cloud/#">
           Download Excursion (Coming soon!)
         </a>
       </p>
-    </div>
+    </header>
 
-    <div class="main-section">
-      <div class="top-section">
-        <p>
-          <!--place image in <p> to make it appear on new line-->
-          <video autoplay muted loop src="./resources/video/excursion"></video>
-        </p>
-      </div>
-      <div class="mid-section">
-          <h2>Your personal travel guide</h2>
-          <div class="image-with-label">
-            <p>Excursion remembers places you like, and recommends new points of interest around you.</p>
-            <p>
-              <!--place image in <p> to make it appear on new line-->
-              <img src="./resources/images/camp.jpg" />
-            </p>
+    <section class="video-section">
+      <p>
+        <!--place image/video in <p> to make it appear on new line-->
+        <video autoplay muted loop src="./resources/videos/excursion.mp4">Video not supported</video>
+      </p>
+    </section>
+
+    <section class="info-section">
+        <h2>Your personal travel guide</h2>
+        <div class="image-with-label">
+          <p>Excursion remembers places you like, and recommends new points of interest around you.</p>
+          <p>
+            <!--place image in <p> to make it appear on new line-->
+            <img src="./resources/images/camp.jpg" alt="A campsite picture" /></p>
           </div>
-      </div>
-      <div class="btm-section">
-        <p>
-          <!--place image in <p> to make it appear on new line-->
-          <img src="./resources/images/phone.png" />
-        </p>
-        <h2>Coming Soon for iPhone and Android</h2>
-        <p>
-          <a class="download-link" href="https://6j2sch9ioslmhh90cnj8n9kk2u8a72nb56lncsc9pmepeelri430.codecademy.cloud/#">
-            Download Excursion (Coming soon!)
-          </a>
-        </p>
+    </section>
 
-      </div>
-    </main>
+    <section class="closing-section">
+      <p>
+        <!--place image in <p> to make it appear on new line-->
+        <img src="./resources/images/phone.png" />
+      </p>
+      <h2>Coming Soon for iPhone and Android</h2>
+      <p>
+        <a class="download-link" href="https://6j2sch9ioslmhh90cnj8n9kk2u8a72nb56lncsc9pmepeelri430.codecademy.cloud/#">
+          Download Excursion (Coming soon!)
+        </a>
+      </p>
+    </section>  <!--e/o btm section-->
 
-
-    <div class="footer">
+    <footer>
       <p>
         © Excursion
       </p>
-
-    </div>
+    </footer>
 
   </body>
 </html>

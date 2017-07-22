@@ -1,0 +1,26 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: Black;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+/*all <h1> nested inside a item with class .header*/
+header h1 {
+  font-size: 50px;
+}
+
+/*all <p> nested inside a item with class .image-with-label*/
+.image-with-label p {
+  color: gray;
+  font-size: 21px;
+}
+
+.download-link {
+  color: aquamarine;
+  font-size: 16px;
+}
